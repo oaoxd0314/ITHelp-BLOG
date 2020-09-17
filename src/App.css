@@ -95,10 +95,10 @@ body {
 .subtitle div{
   width: 3.5rem;
   height: 3px;
-  align-items: center;
-  margin: 0 auto;
+  margin-left: 5rem;
   background:var(--mainBlack);
 }
+
 /* title end */
 /* article */
 .article {

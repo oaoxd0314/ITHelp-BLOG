@@ -24,7 +24,7 @@ export default function App() {
         <Article article={article} title="About Me" className="subtitle"/>
       </InfoBoard>
       <SkillBoard pic={pic2} >
-        <Article article={article} title="About Me" className="subtitle"/>
+        <Article article={article} title="Skill" className="subtitle"/>
       </SkillBoard>
       <Footer />
     </div>
