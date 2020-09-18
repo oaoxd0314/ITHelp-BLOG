@@ -11,8 +11,9 @@ import pic from "./images/side1.jpg";
 import pic2 from "./images/side2.jpeg";
 
 export default function App() {
-  let article =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.";
+  let article =["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend."]
+    
+  const skill =['Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet']
 
   return (
     <div>
@@ -24,7 +25,7 @@ export default function App() {
         <Article article={article} title="About Me" className="subtitle"/>
       </InfoBoard>
       <SkillBoard pic={pic2} >
-        <Article article={article} title="Skill" className="subtitle"/>
+        <Article article={skill} title="Skill" className="subtitle"/>
       </SkillBoard>
       <Footer />
     </div>
