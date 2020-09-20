@@ -21,21 +21,55 @@ body {
   line-height: 1.4;
 }
 /*使用相同的 classname 就會套用上去*/
+
+/* navbar */
 .navbar {
-  background: var(--mainGrey);
+  background: var(--mainBlack);
+  color: var(--mainWhite);
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
+  padding: 0.75rem 2rem;
 }
+.navbar section {
+  display: flex;
+  justify-content: space-between;
+}
+.path {
+  display: flex;
+  align-items: center;
+}
+.navbar h1 {
+  font-size: 2rem;
+  text-align: left;
+}
+.navbar h2 {
+  font-size: 1rem;
+  padding: 1rem;
+  align-items: right;
+}
+
+/* navbar end */
+
+/* footer */
 .footer {
-  background: var(--mainGrey);
-  position: relative;
-  margin-top: -100px;
-  left: 0;
-  height: 100px;
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+  position: absolute;
+  height: 120px;
   width: 100%;
+  text-align: center;
 }
+.text {
+  margin-top: 2rem;
+}
+.footer h1 {
+  font-size: 1.5rem;
+}
+.copyright {
+  margin-top: 1rem;
+}
+/* footer end */
 /* board */
 .board,
 .featuredboard {
@@ -80,7 +114,7 @@ body {
   width: 8rem;
   height: 5px;
   margin: 0 auto;
-  background:var(--mainWhite);
+  background: var(--mainWhite);
 }
 .subtitle {
   text-align: left;
@@ -92,11 +126,11 @@ body {
   font-size: 3rem;
   width: 16vw;
 }
-.subtitle div{
+.subtitle div {
   width: 3.5rem;
   height: 3px;
   margin-left: 5rem;
-  background:var(--mainBlack);
+  background: var(--mainBlack);
 }
 
 /* title end */
@@ -109,10 +143,10 @@ body {
   margin-top: 16rem;
   margin-right: 6rem;
 }
-.article p{
+.article p {
   margin-top: 14rem;
 }
-.article section{
+.article section {
   margin-right: 6rem;
 }
 

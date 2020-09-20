@@ -6,12 +6,12 @@ export default function Article({ article,title,className }) {
 
   const [text,setText]= useState(article)
 
-
   return (
     <div className="article">
       <Title title={title} className={className} />
-      {text.map((item,index)=>{
-        if(text.length>1){
+      {text.map((item,index)=>{ 
+        if(text.length>1){     
+          {/* 判別是否為段落 */}
           return <section key={index}><p >{item}</p></section>
         }
           return <article key={index}>{item}</article>
