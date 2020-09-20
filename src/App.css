@@ -48,6 +48,10 @@ body {
   padding: 1rem;
   align-items: right;
 }
+.navbar a{
+  text-decoration: none;
+  color: var(--mainWhite);
+}
 
 /* navbar end */
 
