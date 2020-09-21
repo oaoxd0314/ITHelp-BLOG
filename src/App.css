@@ -21,7 +21,16 @@ body {
   line-height: 1.4;
 }
 /*使用相同的 classname 就會套用上去*/
-
+.tempbody {
+  margin-top: 15rem;
+  height: 100vh;
+  color: #000000;
+  text-align: center;
+}
+.tempbody h1 {
+  font-size: 5rem;
+  align-items: center;
+}
 /* navbar */
 .navbar {
   background: var(--mainBlack);
@@ -48,7 +57,7 @@ body {
   padding: 1rem;
   align-items: right;
 }
-.navbar a{
+.navbar a {
   text-decoration: none;
   color: var(--mainWhite);
 }
