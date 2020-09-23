@@ -97,6 +97,14 @@ body {
   background: rgba(0, 0, 0, 0.5);
   color: var(--mainWhite);
 }
+.board-nopic{
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+}
+.board-nopic img{
+  display: none;
+}
 .board img {
   min-width: 30vw;
   max-height: 100vh;
@@ -122,6 +130,7 @@ body {
 .title h1 {
   font-size: 4rem;
   margin-top: 12rem;
+  margin-left: 2rem;
 }
 .title div {
   width: 8rem;
@@ -163,4 +172,13 @@ body {
   margin-right: 6rem;
 }
 
-/*  */
+/* article end */
+
+.experience{
+
+  /* 在讓我想想嗚嗚 */
+}
+.timeline {
+  margin-top: 2rem;
+  justify-content: center;
+}

@@ -18,7 +18,7 @@ export default function Home() {
       <FeaturedBoard title="FeaturedBoard" className="title">
         <Banner article={article} />
       </FeaturedBoard>
-      <InfoBoard pic={pic}>
+      <InfoBoard pic={pic} className="board">
         <Article article={article} title="About Me" className="subtitle" />
       </InfoBoard>
       <SkillBoard pic={pic2}>
