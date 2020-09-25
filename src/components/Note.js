@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "./Title";
+import { Link } from "react-router-dom";
 
 export default function Note({ note, title, className }) {
   return (
@@ -11,7 +12,9 @@ export default function Note({ note, title, className }) {
             <h1>title:{item.title}</h1>
             <section>{item.overview}</section>
             <p>{item.date}</p>
-            <button className="btn-primary">看更多</button>
+            <Link className="btn-primary" to={`/rooms/${title}`}>
+              看更多
+            </Link>
           </div>
         );
       })}

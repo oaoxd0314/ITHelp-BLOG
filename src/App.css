@@ -184,7 +184,7 @@ body {
   justify-content: center;
 }
 
-
+/* NOTES */
 .note-container{
   display: flex;
   flex-direction: column;
@@ -207,5 +207,14 @@ body {
 }
 .btn-primary{
 margin-left: 18rem;
+text-decoration: none;
+color: var(--mainBlack);
+}
+.note{
+  display: grid;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  text-align: center;
 }
 
+/* NOTES END */
