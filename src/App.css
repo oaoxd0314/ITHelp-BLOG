@@ -11,6 +11,7 @@
   --mainGrey: #cecece;
   --mainBlue: #5ef0f5;
   --mainBrown: #ebd0ac;
+  --primaryColor: #af9a7d;
 }
 /* 只要使用 body 這個標籤的都會被調用這個 css */
 body {
@@ -176,9 +177,35 @@ body {
 
 .experience{
 
-  /* 在讓我想想嗚嗚 */
+/* 在讓我想想嗚嗚 */
 }
 .timeline {
   margin-top: 2rem;
   justify-content: center;
 }
+
+
+.note-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+
+}
+.note-overview{
+  margin-top: 2rem;
+  display: block;
+  margin-left: 10rem;
+  outline:var(--mainBlack);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  border-style:solid;
+  padding: 2rem;
+}
+.note-overview :hover{
+  transition: all 0.75s;
+}
+.btn-primary{
+margin-left: 18rem;
+}
+
