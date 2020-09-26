@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 import Banner from "../components/Banner";
 import FeaturedBoard from "../components/FeaturedBoard";
 import InfoBoard from "../components/InfoBoard";
-import title from "../components/Title";
+import Title from "../components/Title";
 
 export default function NotesDetail() {
   let article = [
@@ -54,10 +54,15 @@ export default function NotesDetail() {
       </FeaturedBoard>
       <InfoBoard pic={null}>
         <section className="note">
-          <h1>{note.title}</h1>
-          <h2>{note.subtitle}</h2>
-          <p>{note.date}</p>
-          <article>{note.article}</article>
+          <Title title={note.title} className="subtitle" />
+          <div className="note-datetime">by Chris {note.date}</div>
+          <div className="note-area">
+            <p className="note-chapter">chapter 1</p>
+            <article className="note-article">{note.article}</article>
+            <article className="note-article">{note.article}</article>
+            <p className="note-bold">粗體</p>
+            <p className="note-slash">斜體</p>
+          </div>
         </section>
       </InfoBoard>
     </div>

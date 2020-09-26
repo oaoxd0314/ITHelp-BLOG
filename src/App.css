@@ -210,11 +210,40 @@ margin-left: 18rem;
 text-decoration: none;
 color: var(--mainBlack);
 }
+/* main note area  */
 .note{
-  display: grid;
-  margin-top: 5rem;
   margin-left: 5rem;
-  text-align: center;
+  margin-right: 5rem;
 }
+.note-datetime{
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+
+.note-area{
+  position: relative;
+  top: 0.75rem;
+  left: 20rem;
+  margin: auto;
+  width: 700px;
+}
+.note-chapter{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.note-article{
+  margin-bottom: 1.5rem;
+}
+
+.note-bold{
+  font-weight: bolder;
+}
+.note-slash{
+  font-style:oblique;
+}
+/* end */
+
+
 
 /* NOTES END */

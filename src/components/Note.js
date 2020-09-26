@@ -12,7 +12,7 @@ export default function Note({ note, title, className }) {
             <h1>title:{item.title}</h1>
             <section>{item.overview}</section>
             <p>{item.date}</p>
-            <Link className="btn-primary" to={`/rooms/${title}`}>
+            <Link className="btn-primary" to={`/Notes/${item.title}`}>
               看更多
             </Link>
           </div>
