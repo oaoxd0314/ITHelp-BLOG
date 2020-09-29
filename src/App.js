@@ -7,8 +7,12 @@ import About from "./pages/About";
 import Notes from "./pages/Notes";
 import NotesDetail from "./pages/NotesDetail";
 import { Route, Switch } from "react-router-dom";
+import store from "./redux/Store/index"
 
 export default function App() {
+  
+  console.log(store.getState())
+
   return (
     <div>
       <Navbar />

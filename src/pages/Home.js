@@ -12,7 +12,7 @@ export default function Home() {
     let article =["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend."]
     
     const skill =['Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet']
-  
+
   return (
     <div>
       <FeaturedBoard title="FeaturedBoard" className="title">

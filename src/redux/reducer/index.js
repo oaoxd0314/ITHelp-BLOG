@@ -1,3 +1,5 @@
+// redux/reducer/index.js
+
 import { combineReducers } from 'redux';
 import Note from './Note_reducer'
 
