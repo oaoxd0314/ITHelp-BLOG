@@ -1,3 +1,5 @@
+// 我知道我個資外洩了啦 不要肉搜我 >///<
+
 const data = {
   article: [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.",
@@ -39,13 +41,13 @@ const data = {
   experience: [
     {
       year: "2016 Sep",
-      title: "國立高雄科技大學",
+      title: "國立******",
       subtitle: "開始就讀",
-      post: "於2016年就讀國立高雄科技大學資訊管理系(原高雄應用科技大學)",
+      post: "於2016年就讀國立***************(原************大學)",
     },
     {
       year: "2017 Dec - 2018 Dec",
-      title: "資訊管理系學會",
+      title: "*******系學會",
       subtitle: "任職期間",
       post:
         "在此期間累積多次舉辦多次中小型活動的經驗，包括企劃書撰寫、場地布置、經費估算、流程設計、團隊合作和解決問題等等",
@@ -59,10 +61,10 @@ const data = {
     },
     {
       year: "2020 Jun",
-      title: "國立高雄科技大學",
+      title: "國立*******",
       subtitle: "畢業",
       post:
-        "於2020年畢業於國立高雄科技大學，熟悉前端網頁架構、撰寫以及部分後端設計和資料庫鑽寫連結。",
+        "於2020年畢業於國立********，熟悉前端網頁架構、撰寫以及部分後端設計和資料庫鑽寫連結。",
     },
   ],
 };
