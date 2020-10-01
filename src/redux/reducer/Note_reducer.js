@@ -1,4 +1,5 @@
 // redux/reducer/Note_reducer.js
+import data from "../../data/data"
 
 import {Constants} from '../Constants'
 
@@ -10,11 +11,16 @@ const initialState = {
 };
 
 
+
 export default function Note(state = initialState, action) {
   switch (action.type) {
     case Constants.GET_NOTE:
       return {
-        // get data from your db
+        ...state,
+        article:action.article,
+        skill: action.skill,
+        experience:action.experience,
+        Notes: action.Notes,
       };
     case Constants.PUT_NOTE:
       return {

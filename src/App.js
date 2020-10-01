@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useEffect}from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -7,11 +7,17 @@ import About from "./pages/About";
 import Notes from "./pages/Notes";
 import NotesDetail from "./pages/NotesDetail";
 import { Route, Switch } from "react-router-dom";
-import store from "./redux/Store/index"
+import {useDispatch } from "react-redux";
+import { fetchPageData } from "./redux/action/Note_Action";
 
 export default function App() {
-  
-  console.log(store.getState())
+  const dispatch = useDispatch();
+
+  const getall = () => dispatch(fetchPageData());
+
+  useEffect(() => {
+    getall();
+  });
 
   return (
     <div>

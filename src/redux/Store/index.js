@@ -1,8 +1,14 @@
-// 	redux/store/index.js
-
-import {createStore} from "redux";
+import { applyMiddleware, createStore } from "redux";
 import rootReducer from "../reducer/index";
+import thunk from 'redux-thunk';
+import logger from 'redux-logger';
 
-const store = createStore(rootReducer);
+import { composeWithDevTools } from 'redux-devtools-extension';
+
+const store = createStore(
+	rootReducer,
+	composeWithDevTools(
+		applyMiddleware(thunk, logger),
+	));
 
 export default store;

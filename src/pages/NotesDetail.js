@@ -4,38 +4,11 @@ import Banner from "../components/Banner";
 import FeaturedBoard from "../components/FeaturedBoard";
 import InfoBoard from "../components/InfoBoard";
 import Title from "../components/Title";
-
+import { useSelector } from "react-redux";
 export default function NotesDetail() {
-  let article = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.",
-  ];
 
-  const Notes = [
-    {
-      title: "Lorem", //大標
-      subtitle: "ipsum dolor sit", // 副標
-      date: "2020/09/24", // 日期
-      overview: "consectetur adipiscing elit. Donec pretium ante erat", //概述
-      article:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.",
-    },
-    {
-      title: "TITLE2",
-      subtitle: "ipsum dolor sit",
-      date: "2020/09/25",
-      overview: "consectetur adipiscing elit. Donec pretium ante erat",
-      article:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.",
-    },
-    {
-      title: "TITLE3",
-      subtitle: "ipsum dolor sit",
-      date: "2020/09/26",
-      overview: "consectetur adipiscing elit. Donec pretium ante erat",
-      article:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend.",
-    },
-  ];
+  const article = useSelector((state) => state.Note.article);
+  const Notes = useSelector((state) => state.Note.Notes);
 
   // 接收 param
   let { param } = useParams({});

@@ -3,15 +3,17 @@ import InfoBoard from "../components/InfoBoard";
 import FeaturedBoard from "../components/FeaturedBoard";
 import Banner from "../components/Banner";
 import Article from "../components/Article";
-import SkillBoard from "../components/SkillBoard"
+import SkillBoard from "../components/SkillBoard";
 import pic from "../images/side1.jpg";
 import pic2 from "../images/side2.jpeg";
+import { useSelector  } from "react-redux";
+
 // home.js
 
 export default function Home() {
-    let article =["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum pulvinar, in blandit purus eleifend."]
-    
-    const skill =['Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet']
+
+  const article = useSelector((state) => state.Note.article);
+  const skill = useSelector((state) => state.Note.skill);
 
   return (
     <div>
